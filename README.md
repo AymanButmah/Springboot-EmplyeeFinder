@@ -7,7 +7,7 @@ This website support the following features:
              b.	Allow search for an employee based on: userId.
              c.	Insert a record for a new employee.
 
-          2.	View for Departments information that allows the user to:
+          2. View for Departments information that allows the user to:
              a.	Show all departments, and their managers.
              b.	Search for a department and show the employees-names who belong to it.
              c.	Insert a record for a new department.
