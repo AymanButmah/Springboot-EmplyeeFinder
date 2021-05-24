@@ -13,3 +13,5 @@ This website support the following features:
              c.	Insert a record for a new department.
 
 Project Preview:
+![](images/11.png)
+![](images/22.png)
