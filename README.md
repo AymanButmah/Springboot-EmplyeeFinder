@@ -1,6 +1,7 @@
 # Springboot-EmplyeeFinder
 
-The website support the following features:
+This website support the following features:
+
           1. View for Employees information that allows the user to:
              a.	Show all employees names associated with their titles, departments and salaries.
              b.	Allow search for an employee based on: userId.
@@ -10,3 +11,5 @@ The website support the following features:
              a.	Show all departments, and their managers.
              b.	Search for a department and show the employees-names who belong to it.
              c.	Insert a record for a new department.
+
+Project Preview:
