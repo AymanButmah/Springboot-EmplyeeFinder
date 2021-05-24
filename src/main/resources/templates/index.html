@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SpringBootWebProject</title>
+	<link rel="stylesheet" th:href="@{css/home.css}">
+
+</head>
+<script>
+	function clickAlert() {
+		alert("New Record Added Succesfully!!");
+	}
+</script>
+
+<body>
+	<div id="emp-container">
+		<h2>Employees Information</h2>
+		<hr id="hr2">
+		<br>
+		<form th:action="@{/employees}">
+			<br>
+			<p class="emp-div">- Choose the Number of Records That You Want
+				To View</p>
+			<input type="number" id="quantity" name="quantity" min="1" value="100"> <br> <br>
+			<hr>
+			<br>
+			<p class="emp-div">Press to Show All Employees</p>
+			<br> <br>
+
+			<button name="all_emp" type="submit">Show</button>
+			<hr>
+			<br>
+		</form>
+		<form th:action="@{/employees/employee}">
+			<p class="emp-div">- Search for Employees According to Their Names</p>
+			<p id="note">Note: You can search for the first name or last name</p>
+			<br><br>
+			<div class="search-container">
+				<input class="search-input" type="text" placeholder="Search.." name="emp_name_search">
+				<button class="search-button" name="emp_name" type="submit">Search</button>
+				<br><br>
+			</div>
+		</form>
+		<hr>
+		<br>
+		<form th:action="@{/employees/newEmployee}">
+			<p class="emp-div">- Insert a Record for a New Employee</p>
+			<div class="insert-container">
+				<pre> 1. Please Enter Employee Number:</pre>
+				<input class="insert" type="text" placeholder="emp_no .." name="emp_no_insert">
+				<pre> 2. Please Enter Employee Birth Date:</pre>
+				<input class="insert" type="date" placeholder="birth_date .." name="bDate_insert">
+				<pre> 3. Please Enter Employee First Name:</pre>
+				<input class="insert" type="text" placeholder="first_name .." name="fName_insert">
+				<pre> 4. Please Enter Employee Last Name:</pre>
+				<input class="insert" type="text" placeholder="last_name .." name="lName_insert">
+				<pre> 5. Please Choose Employee Gender: <p id="note">Note: Enter ' M ' for Male, ' F ' for Female</p>
+				</pre>
+				<input class="insert" type="text" placeholder="gender .." name="gender_insert">
+				<pre> 6. Please Enter Employee Hire Date:</pre>
+				<input class="insert" type="date" placeholder="hire_date .." name="hDate_insert">
+				<br>
+				<button name="emp_record" type="submit" onclick="clickAlert()">Insert</button>
+			</div>
+		</form>
+		<hr>
+		<br>
+		<form th:action="@{/employees/delete}">
+			<p class="emp-div">- Enter Employee Number(emp_no) To Delete The Employee:</p>
+			<br><br>
+			<div class="search-container">
+				<input class="search-input" type="text" placeholder="emp_no .." name="emp_no_del">
+				<button class="search-button" name="delete_emp" type="submit">Search</button>
+				<br><br>
+			</div>
+		</form>
+
+	</div>
+
+
+	<div id="dept-container">
+		<h2>Departments Inforamtion</h2>
+		<hr id="hr2">
+		<br>
+		<form th:action="@{/departments}">
+			<div class="search-container">
+
+				<p class="dept-div">- Press to Show All Departments</p>
+				<br> <br>
+				<button name="show_dep" type="submit">Show</button>
+			</div>
+			<br>
+			<hr>
+			<br>
+		</form>
+		<form th:action="@{/departments/newDepartment}">
+			<p class="dept-div">- Insert a Record for a New Department</p>
+			<div class="insert-container">
+				<pre> 1. Please Enter Department Number:</pre>
+				<input class="insert" type="text" placeholder="dept_no .." name="dept_no_insert">
+				<pre> 2. Please Enter Department Name:</pre>
+				<input class="insert" type="text" placeholder="dept_name .." name="dept_name_insert">
+				<br>
+				<button name="dept_record" type="submit" onclick="clickAlert()">Insert</button>
+			</div>
+		</form>
+		<hr>
+		<br>
+		<form th:action="@{/departments/department}">
+			<p class="dept-div">- Search for Departments According to their Names</p>
+			<br><br>
+			<div class="search-container">
+				<input class="search-input" type="text" placeholder="Search.." name="dept_name_search">
+				<button class="search-button" name="dept_name" type="submit">Search</button>
+			</div>
+		</form>
+	</div>
+	
+</body>
+
+</html>

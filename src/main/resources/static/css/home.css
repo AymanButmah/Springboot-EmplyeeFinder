@@ -1,0 +1,153 @@
+
+h1{
+  color: white;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: black
+}
+#emp-container{
+  padding-top: 20px;
+  padding-left: 30px;
+  background-color: lightgrey;
+  margin-left: 150px;
+  margin-right:150px;
+  margin-top: 50px;
+  border: 10px solid pink;
+  font-size: 18px;
+
+}
+#dept-container {
+  padding-top: 20px;
+  padding-left: 30px;
+  background-color: #D8BFD8;
+  margin-left: 150px;
+  margin-right:150px;
+  margin-top: 50px;
+  border: 10px solid purple;
+  font-size: 18px;
+}
+#search-container{
+	display: inline;
+}
+
+#logout{
+  background-color: white;
+  border-left: 10px solid pink;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  padding: 15px;
+}
+#quantity{
+  width: 10%;
+}
+input{
+  border: 2px solid #555;
+  border-radius: 5px;
+  width: 30%;
+  height: 110%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+.emp-div {
+  display: inline;
+  font-family: "Andalus";
+  color: black;
+  font-style: bold;
+  font-size: 25px;
+}
+.dept-div {
+  display: inline;
+  font-family: "Andalus";
+  color: black;
+  font-style: bold;
+  font-size: 25px;
+}
+
+button{
+  border: 3px solid #555;
+  border-radius: 5px;
+  color: white;
+  background-color: #BC8F8F;
+  width: 15%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  margin-left: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+#Main{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  height: 7%;
+  width: 10%;
+  color: white;
+  background-color: #BC8F8F;
+  font-size: 18px;
+}
+#note{
+  display: inline;
+  border-left: 10px solid #1e7f9d;
+  color: black;
+  margin-left: 30px;
+  padding: 12px;
+  padding-bottom: 15px;
+  background-color: #dcf4ff;
+  width: 70%;
+  font-size: 20px;
+  }
+  #hr2{
+    height: 2px;
+    width: 50%;
+    background-color: red;
+  }
+  hr{
+    height: 2px;
+    width: 98%;
+  }
+  pre{
+    padding-left: 20px;
+    font-family: "Andalus";
+    color: black;
+    font-style: bold;
+    font-size: 22px;
+  }
+  .search-input {
+    background-color: #dcf4ff;
+    border-radius: 0px;
+    color: black;
+    font-size: 16px;
+    margin-right: 0px;
+  }
+ .search-button {
+    border: 2px solid #555;
+    border-radius: 0px;
+    color: white;
+    margin-left: -5px;
+    width: 10%;
+ }
+ #error {
+   padding-left: 20px;
+    font-family: "Andalus";
+    color: red;
+    font-style: bold;
+    font-size:40px;
+    background-color: white;
+    width: 50%;
+ }
+ #accept {
+  padding-left: 20px;
+    font-family: "Andalus";
+    color: green;
+    font-style: bold;
+    font-size:40px;
+    background-color: white;
+    width: 50%;
+ }

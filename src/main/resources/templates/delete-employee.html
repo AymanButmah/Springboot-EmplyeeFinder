@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="windows-1255">
+	<title>Employees Data</title>
+	<link rel="stylesheet" th:href="@{css/table.css}">
+
+</head>
+<style>
+	table {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		border-collapse: collapse;
+		width: 100%;
+		background-color: white;
+	}
+
+	td,
+	th {
+		border: 2px solid #ddd;
+		padding: 8px;
+	}
+
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		text-align: center;
+		background-color: rgb(0, 128, 0);
+		color: white;
+	}
+
+	button {
+		border: 3px solid #555;
+		border-radius: 5px;
+		color: white;
+		background-color: #BC8F8F;
+		width: 15%;
+		padding: 12px 20px;
+		margin: 10px 0;
+		margin-left: 20px;
+		box-sizing: border-box;
+		font-size: 16px;
+	}
+</style>
+<script>
+	function goBack() {
+		window.history.back();
+	}
+</script>
+
+<body>
+		<h1>This Record Was Deleted Succesfully!</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Employee Number</th>
+				<th>Birth Date</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Gender</th>
+				<th>Hire Date</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="Employee: ${employees}">
+				<td th:text="${Employee.emp_no}" />
+				<td th:text="${Employee.birth_date}" />
+				<td th:text="${Employee.firstName}" />
+				<td th:text="${Employee.lastName}" />
+				<td th:text="${Employee.gender}" />
+				<td th:text="${Employee.hire_date}" />
+			</tr>
+
+		</tbody>
+	</table>
+	<br>
+	<button onclick="goBack()">Go Back</button>
+</body>
+
+</html>
